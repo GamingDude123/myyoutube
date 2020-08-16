@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 16px;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex; /* this is how me make the boxes inside side by side*/
+  height: 100%;
+}
+
+.leftsidebox{
+  flex-basis: 240px;
+  border: 1px dotted red;
+  background-color: white;
+  
+
+}
+
+.logo{
+  height: 56px;
+  border: 1px solid blue;
+  position: fixed;
+  width: 240px;
+}
+
+.leftsidesectionsbox{
+  height: 100vh;
+  flex-basis: 240px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 60px;
+  position: absolute;  
+}
+
+.leftsidesection{
+  height: 40px;
+  /*border: 1px solid black;*/
+  margin-left: 30px;
+  text-align: left;
+  font-size: 24px;
+}
+
+
+.rightsidebox{
+  flex:1;
+  border: 1px solid green;
+
+}
+
+.rightnav {
+  height: 56px;
+  border: 1px solid blue;
+  position: fixed;
+  width: 100vw;
+  display: inline;
+  z-index: 10;
+  background-color: white;
+}
+
+.rightnav form input{
+  margin-top: 10px;
+  width: 580px;
+  height:26px;
+  
+}
+.rightnav form button{
+  width: 60px;
+  height: 32px;
+  position: relative;
+  top: 1px;
+  left: -5px
+}
+
+
+.film{
+  position: relative;
+  top: 5px;
+  margin-left: 100px;
+  height:20px;
+  color: grey;
+  margin-right: 25px;
+}
+
+.menu{
+  position: relative;
+  top: 4px;
+  height: 19px;
+  margin-right: 25px;
+}
+
+.dots{
+  position: relative;
+  top: 4px;
+  height: 18px;
+  margin-right: 25px;
+}
+
+.signin {
+  
+  width: 104px !important;
+  height: 38px !important; 
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right:200px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #134464;
+}
+.vidsection{
+  margin: 0px 5px 0px 5px;
+  /*border: 1px solid red;*/
+  height: 350px;
+  display:flex;
+}
+
+.vidbox {
+  flex:1;
+  border:1px solid green;
+}
+
+.ytpic{
+  max-width: 350px;
+  max-height: 190px;
+  display: block;
+  object-fit: fill;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vidgoeshere{
+  height: 47% ; 
+  width: 90%;
+  border: 1px solid black;
+
+  margin: 20px auto 5px auto;
+}
+
+.channelviews{
+  margin-bottom: 500px;
+  margin-left: 25%;
+}
+/* hieght of logo side bar is 56px */ 
+/* Flex basis for exact 
+try without -> flex shrink 0
+flex grow 0 */
+
