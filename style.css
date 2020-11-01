@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{font-family: 'Roboto', sans-serif;} 
+
+
+*{font-style: normal;}
+@media screen and (max-width: 1300px) {
+  .rightnav form input{
+    margin-top: 10px;
+    width: 30% !important;
+    height:26px;
+    
+  }
+
+  
+}
+
+@media screen and (max-width: 890px) {
+  .rightnav form input{
+    margin-top: 10px;
+    width: 30% !important;
+    height:26px;
+    
+  }
+.signinmain{
+  display: none !important;
+}
+  .leftsidebox{
+    display: none;
+  }
+ 
+}
+
+
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 16px;
   font-family: 'Open Sans';
@@ -7,24 +42,33 @@
   padding-left: 10px;
 }
 
+
+
 body{
   margin: 0;
   padding: 0;
   display: flex; /* this is how me make the boxes inside side by side*/
+  
   height: 100%;
 }
 
 .leftsidebox{
   flex-basis: 240px;
-  border: 1px dotted red;
+  flex-shrink: 0;
+ /* border: 1px dotted red; */
   background-color: white;
-  
 
+
+}
+
+.leftsidebox h4{
+  font-size: 14px;
+  color: gray;
 }
 
 .logo{
   height: 56px;
-  border: 1px solid blue;
+ /* border: 1px solid blue; */
   position: fixed;
   width: 240px;
 }
@@ -34,8 +78,11 @@ body{
   flex-basis: 240px;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin-top: 60px;
-  position: absolute;  
+  margin-top: 70px;
+  position: absolute;
+  width: 240px;
+
+ 
 }
 
 .leftsidesection{
@@ -43,19 +90,32 @@ body{
   /*border: 1px solid black;*/
   margin-left: 30px;
   text-align: left;
-  font-size: 24px;
+  font-size: 14px;
+  
+  
+}
+
+.leftsidesection:hover{
+  background-color: rgba(212, 212, 212, 0.404);
+  cursor: pointer;
+}
+
+.about{
+  font-size: 13px; text-decoration: none; color:rgb(97, 95, 95)
+  
 }
 
 
 .rightsidebox{
   flex:1;
-  border: 1px solid green;
+  overflow: hidden;
+ /* border: 1px solid green; */
 
 }
 
 .rightnav {
   height: 56px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   position: fixed;
   width: 100vw;
   display: inline;
@@ -109,24 +169,34 @@ body{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin-right:200px;
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: white; 
-  color: black; 
-  border: 2px solid #134464;
+  color: #156397; 
+  border: 1px solid #156397;
+  border-radius: 5px;
+  line-height: 2;
+  font-weight: bold;
 }
 .vidsection{
   margin: 0px 5px 0px 5px;
   /*border: 1px solid red;*/
-  height: 350px;
+  height: 300px;
   display:flex;
 }
 
+.vidsection p{
+  font-size: 14px;
+  color: rgb(85, 84, 84);
+  font-weight: 500;
+}
+
 .vidbox {
+  height: 300px;
   flex:1;
-  border:1px solid green;
+ /* border:1px solid green; */
 }
 
 .ytpic{
@@ -140,11 +210,12 @@ body{
 }
 
 #vidgoeshere{
-  height: 47% ; 
+  height: 42% ; 
   width: 90%;
   border: 1px solid black;
 
   margin: 20px auto 5px auto;
+  overflow:hidden;
 }
 
 .channelviews{
